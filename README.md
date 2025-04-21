@@ -28,7 +28,7 @@ A simple platform to register users, log in, and manage blog posts with tags and
    cd your-repo-name
 2. **Install Dependencies**
 npm install
-
+NOTE: Entry point : index.js
 3.**Set Up Environment Variables**
 
 DB_HOST
