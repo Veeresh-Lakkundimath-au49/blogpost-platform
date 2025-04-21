@@ -30,6 +30,7 @@ A simple platform to register users, log in, and manage blog posts with tags and
 npm install
 
 3.**Set Up Environment Variables**
+
 DB_HOST=<your-database-host>
 DB_PORT=<your-database-port>
 DB_PASSWORD=<your-database-password>
@@ -47,16 +48,29 @@ npm start
 
 - **Method:** `POST`
 - **Description:** Registers a new user.
-
+- 
 ---
+**📩 Request Body Structure**
 
-#### 📩 Request Body Structure
-```json
 {
   "name": "String",
   "email": "String",
   "password": "String"
 }
+
+Sample body:{
+"name":"rahul",
+"email":"rahul@gmail.com ",
+"password":"12345"
+}
+
+Response: 
+Status code:200
+Response body: Object
+{ message: String }
+{ message: "user registered successfully" }
+
+
 
 
 
