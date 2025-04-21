@@ -42,19 +42,17 @@ PORT=<your-app-port>
 5. **Start the Server** using
 npm start
 
-**API Documentation**
+API documentation
 
-1. **Endpoint**: `/user/register`
-
-- **Method:** `POST`
-
----
-**📩 Request Body Structure**
-
+1. Endpoint: /user/register
+httpMethod:POST
+body: Object,
+Request body strucutre:
+body:{
 {
-  "name": "String",
-  "email": "String",
-  "password": "String"
+"name":String,
+"email":String,
+"password":String,
 }
 
 Sample body:{
@@ -63,15 +61,15 @@ Sample body:{
 "password":"12345"
 }
 
-**Response Structure**: 
+Response: 
 Status code:200
 Response body: Object
 { message: String }
 { message: "user registered successfully" }
 
-2. Endpoint: `/user/login`
- **Method:**:`POST`
-   
+
+2. Endpoint: /user/login
+httpMethod:POST
 body: Object,
 Request body strucutre :
 body:{
@@ -100,9 +98,8 @@ Sample Response
 }
 
 
-3. Endpoint: `/user/blog/`
- **Method:**:`POST`
-   
+3. Endpoint: /user/blog/
+httpMethod:POST
 body: Object,
 Request body strucutre :
 body:{
@@ -138,16 +135,15 @@ Sample Response
 { message: "blog created successfully!" }
 
 
-4. Endpoint: `/user/blog`
- **Method:**:`GET`
-   
+4. Endpoint: /user/blog
+httpMethod:GET
 Query Parameters:
 author=String
 page=Number
 tag=String
 
 Sample query parameters
-`?author=rahul&page=1&tag=tech`
+?author=rahul&page=1&tag=tech
 
 Response:
 Status code: 200
@@ -184,8 +180,6 @@ Sample response
 "createdAt": "2025-04-21T06:08:01.860Z",
 "updatedAt": "2025-04-21T06:08:01.860Z"
 },
-
-
 
 
 
