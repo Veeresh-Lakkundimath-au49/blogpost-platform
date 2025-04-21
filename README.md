@@ -31,15 +31,20 @@ npm install
 
 3.**Set Up Environment Variables**
 
-DB_HOST=<your-database-host>
-DB_PORT=<your-database-port>
-DB_PASSWORD=<your-database-password>
-JWT_SECRET_KEY=<your-jwt-secret-key>
-PORT=<your-app-port>
+DB_HOST
+
+DB_PORT
+
+DB_PASSWORD
+
+JWT_SECRET_KEY
+
+PORT
 
 4. **Save ca.pem file in the config/ directory**
 
-5. **Start the Server** using
+
+6. **Start the Server** using
 npm start
 
 API documentation
