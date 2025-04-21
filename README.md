@@ -4,8 +4,6 @@ A simple platform to register users, log in, and manage blog posts with tags and
 
 ---
 
-## 🚀 Project Setup
-
 ### ✅ Pre-requisites
 
 - **Node.js** installed locally  
@@ -42,6 +40,23 @@ PORT=<your-app-port>
 
 5. **Start the Server**
 npm start
+
+**API Documentation**
+
+### 🧾 Endpoint: `/user/register`
+
+- **Method:** `POST`
+- **Description:** Registers a new user.
+
+---
+
+#### 📩 Request Body Structure
+```json
+{
+  "name": "String",
+  "email": "String",
+  "password": "String"
+}
 
 
 
